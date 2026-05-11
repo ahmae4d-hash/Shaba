@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أصحاب رسول الله ﷺ - موقع الصحابة الكرام</title>
+  <meta name="description" content="موقع شامل عن الصحابة الكرام رضي الله عنهم، يتضمن سيرة كل صحابي من الميلاد حتى الوفاة">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="basmala">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+    <h1 class="site-title">أصحاب رسول الله ﷺ</h1>
+    <p class="site-subtitle">موسوعة شاملة في سير الصحابة الكرام رضي الله عنهم أجمعين</p>
+  </div>
+</header>
+
+<main>
+  <div class="intro-box">
+    <strong>قال رسول الله ﷺ:</strong> "خير الناس قرني، ثم الذين يلونهم، ثم الذين يلونهم"
+    <br><span style="font-size:0.85rem;color:#6b6b6b">رواه البخاري ومسلم</span>
+    <br><br>
+    هذا الموقع يضم سير <strong>أبرز الصحابة الكرام</strong> رضي الله عنهم، من الذين آمنوا بالله ورسوله، وجاهدوا في سبيل الله، وكانوا نجوماً يُهتدى بهم في الظلمات. يتضمن كل صحابي تاريخه الكامل من الميلاد حتى الوفاة.
+  </div>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="ابحث عن صحابي بالاسم..." oninput="filterCompanions()">
+  </div>
+
+  <h2 class="section-title"><span class="icon">&#9733;</span> الصحابة الكرام</h2>
+
+  <div class="companions-grid" id="companionsGrid">
+
+    <a href="bilal.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">ب</div>
+        <div>
+          <div class="card-name">بلال بن رباح</div>
+          <div class="card-kunya">أبو عبد الله</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">أول مؤذن في الإسلام، العبد الحبشي الذي صبر على العذاب ولم يتخلَّ عن دينه، قال "أحدٌ أحد".</div>
+        <div class="card-meta">
+          <span class="meta-tag">مؤذن الرسول</span>
+          <span class="meta-tag gold">من السابقين</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="salman.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">س</div>
+        <div>
+          <div class="card-name">سلمان الفارسي</div>
+          <div class="card-kunya">أبو عبد الله</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">الباحث عن الحق الذي قطع الأرض من فارس إلى المدينة، وصاحب فكرة الخندق في غزوة الأحزاب.</div>
+        <div class="card-meta">
+          <span class="meta-tag">أهل البيت</span>
+          <span class="meta-tag gold">صاحب الخندق</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="abu-hurairah.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">أ</div>
+        <div>
+          <div class="card-name">أبو هريرة</div>
+          <div class="card-kunya">عبد الرحمن بن صخر</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">أكثر الصحابة رواية للحديث النبوي الشريف، المحدِّث الجليل الذي حفظ خمسة آلاف حديث وأكثر.</div>
+        <div class="card-meta">
+          <span class="meta-tag">أكثر المحدثين</span>
+          <span class="meta-tag gold">أهل الصُّفَّة</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="ibn-masud.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">ع</div>
+        <div>
+          <div class="card-name">عبد الله بن مسعود</div>
+          <div class="card-kunya">أبو عبد الرحمن</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">حامل نعل رسول الله ﷺ وصاحبه في سفره وحضره، أقرأ الناس لكتاب الله وأعلمهم بالسنة.</div>
+        <div class="card-meta">
+          <span class="meta-tag">قارئ القرآن</span>
+          <span class="meta-tag gold">من السابقين</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="muadh.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">م</div>
+        <div>
+          <div class="card-name">معاذ بن جبل</div>
+          <div class="card-kunya">أبو عبد الرحمن</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">أعلم الأمة بالحلال والحرام، بعثه النبي ﷺ قاضياً ومعلماً لأهل اليمن، قال فيه النبي: "أعلمهم بالحلال والحرام".</div>
+        <div class="card-meta">
+          <span class="meta-tag">قاضي اليمن</span>
+          <span class="meta-tag gold">العالم الفقيه</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="anas.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">أ</div>
+        <div>
+          <div class="card-name">أنس بن مالك</div>
+          <div class="card-kunya">أبو حمزة</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">خادم رسول الله ﷺ عشر سنوات، قال له النبي: "اللهم أكثر ماله وولده"، وتوفي وهو من أخر الصحابة وفاة.</div>
+        <div class="card-meta">
+          <span class="meta-tag">خادم النبي</span>
+          <span class="meta-tag gold">طول العمر</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="khalid.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">خ</div>
+        <div>
+          <div class="card-name">خالد بن الوليد</div>
+          <div class="card-kunya">أبو سليمان</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">سيف الله المسلول، لم يُهزم في معركة قط، قاد مئة معركة وأكثر دون هزيمة، فاتح العراق والشام.</div>
+        <div class="card-meta">
+          <span class="meta-tag">سيف الله</span>
+          <span class="meta-tag gold">القائد الفاتح</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="amr.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">ع</div>
+        <div>
+          <div class="card-name">عمرو بن العاص</div>
+          <div class="card-kunya">أبو عبد الله</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">الداهية الكبير، فاتح مصر الإسلامي، الدبلوماسي الماهر الذي أسلم قبيل فتح مكة وحسن إسلامه.</div>
+        <div class="card-meta">
+          <span class="meta-tag">فاتح مصر</span>
+          <span class="meta-tag gold">الداهية</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="saad.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">س</div>
+        <div>
+          <div class="card-name">سعد بن أبي وقاص</div>
+          <div class="card-kunya">أبو إسحاق</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">أول من رمى بسهم في سبيل الله، فاتح العراق وبلاد فارس، أحد العشرة المبشرين بالجنة.</div>
+        <div class="card-meta">
+          <span class="meta-tag">العشرة المبشرون</span>
+          <span class="meta-tag gold">فاتح العراق</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="ibn-abbas.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">ع</div>
+        <div>
+          <div class="card-name">عبد الله بن عباس</div>
+          <div class="card-kunya">أبو العباس</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">حبر الأمة وترجمان القرآن، دعا له النبي ﷺ بقوله: "اللهم فقهه في الدين وعلمه التأويل".</div>
+        <div class="card-meta">
+          <span class="meta-tag">حبر الأمة</span>
+          <span class="meta-tag gold">ابن عم النبي</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="ibn-umar.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">ع</div>
+        <div>
+          <div class="card-name">عبد الله بن عمر</div>
+          <div class="card-kunya">أبو عبد الرحمن</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">من أشد الصحابة اتباعاً للسنة النبوية، كان لا يتأخر عن سنة رسول الله ﷺ ولو كانت في البراري.</div>
+        <div class="card-meta">
+          <span class="meta-tag">اتباع السنة</span>
+          <span class="meta-tag gold">ابن الفاروق</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="abu-musa.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">أ</div>
+        <div>
+          <div class="card-name">أبو موسى الأشعري</div>
+          <div class="card-kunya">عبد الله بن قيس</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">صاحب الصوت العذب في تلاوة القرآن، قال له النبي ﷺ: "لقد أوتيت مزماراً من مزامير آل داود".</div>
+        <div class="card-meta">
+          <span class="meta-tag">القارئ المرتل</span>
+          <span class="meta-tag gold">والي البصرة</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="hudhayfah.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">ح</div>
+        <div>
+          <div class="card-name">حذيفة بن اليمان</div>
+          <div class="card-kunya">أبو عبد الله</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">صاحب سر رسول الله ﷺ في المنافقين، كان النبي يخبره بأسماء المنافقين خاصةً دون سائر الصحابة.</div>
+        <div class="card-meta">
+          <span class="meta-tag">صاحب السر</span>
+          <span class="meta-tag gold">كاشف النفاق</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="zayd.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">ز</div>
+        <div>
+          <div class="card-name">زيد بن ثابت</div>
+          <div class="card-kunya">أبو خارجة</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">كاتب الوحي للنبي ﷺ، الذي تعلم العبرية والسريانية بأمر النبي في أيام قليلة، وجمع القرآن الكريم.</div>
+        <div class="card-meta">
+          <span class="meta-tag">كاتب الوحي</span>
+          <span class="meta-tag gold">جامع القرآن</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="talha.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">ط</div>
+        <div>
+          <div class="card-name">طلحة بن عبيد الله</div>
+          <div class="card-kunya">أبو محمد</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">أحد العشرة المبشرين بالجنة، فدى النبي ﷺ بنفسه في أحد حتى شُلَّت يده، لُقِّب بـ"طلحة الفياض".</div>
+        <div class="card-meta">
+          <span class="meta-tag">العشرة المبشرون</span>
+          <span class="meta-tag gold">بطل أحد</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="zubayr.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">ز</div>
+        <div>
+          <div class="card-name">الزبير بن العوام</div>
+          <div class="card-kunya">أبو عبد الله</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">أحد العشرة المبشرين بالجنة وحواري رسول الله ﷺ، أول من سلَّ سيفاً في سبيل الله في الإسلام.</div>
+        <div class="card-meta">
+          <span class="meta-tag">العشرة المبشرون</span>
+          <span class="meta-tag gold">حواري النبي</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="abdurrahman.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">ع</div>
+        <div>
+          <div class="card-name">عبد الرحمن بن عوف</div>
+          <div class="card-kunya">أبو محمد</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">أحد العشرة المبشرين بالجنة، التاجر الصحابي الذي قال عنه النبي: "يدخل الجنة حبواً" لكثرة ماله.</div>
+        <div class="card-meta">
+          <span class="meta-tag">العشرة المبشرون</span>
+          <span class="meta-tag gold">التاجر الجواد</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="abu-darda.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">أ</div>
+        <div>
+          <div class="card-name">أبو الدرداء</div>
+          <div class="card-kunya">عُوَيمر بن زيد</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">حكيم هذه الأمة، العابد الزاهد الذي آثر العلم على التجارة، قاضي دمشق في عهد عثمان رضي الله عنه.</div>
+        <div class="card-meta">
+          <span class="meta-tag">حكيم الأمة</span>
+          <span class="meta-tag gold">العابد الزاهد</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="abu-dhar.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">أ</div>
+        <div>
+          <div class="card-name">أبو ذر الغفاري</div>
+          <div class="card-kunya">جُندُب بن جنادة</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">الصادق في قوله الحق، قال فيه النبي ﷺ: "ما أظلَّت الخضراء ولا أقلَّت الغبراء من ذي لهجة أصدق من أبي ذر".</div>
+        <div class="card-meta">
+          <span class="meta-tag">الصادق الأمين</span>
+          <span class="meta-tag gold">الزاهد الورع</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="usamah.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">أ</div>
+        <div>
+          <div class="card-name">أسامة بن زيد</div>
+          <div class="card-kunya">أبو محمد</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">حِبُّ رسول الله ﷺ وابن حِبِّه، قاد الجيش وعمره 18 عاماً، وكان أحب الناس إلى رسول الله ﷺ.</div>
+        <div class="card-meta">
+          <span class="meta-tag">حب النبي</span>
+          <span class="meta-tag gold">أمير الجيش</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="ubadah.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">ع</div>
+        <div>
+          <div class="card-name">عبادة بن الصامت</div>
+          <div class="card-kunya">أبو الوليد</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">نقيب الأنصار، أحد الذين بايعوا النبي ﷺ في بيعة العقبة، وأول معلم في الإسلام أُرسل إلى المدينة.</div>
+        <div class="card-meta">
+          <span class="meta-tag">نقيب الأنصار</span>
+          <span class="meta-tag gold">العقبة الأولى</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="abu-ubaydah.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">أ</div>
+        <div>
+          <div class="card-name">أبو عبيدة بن الجراح</div>
+          <div class="card-kunya">عامر بن عبد الله</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">أمين هذه الأمة بشهادة النبي ﷺ، أحد العشرة المبشرين بالجنة، قائد الجيوش في الشام.</div>
+        <div class="card-meta">
+          <span class="meta-tag">العشرة المبشرون</span>
+          <span class="meta-tag gold">أمين الأمة</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="saad-muadh.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">س</div>
+        <div>
+          <div class="card-name">سعد بن معاذ</div>
+          <div class="card-kunya">أبو عمرو</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">سيد الأوس، الذي اهتز لوفاته عرش الرحمن، وحكم في بني قريظة بحكم الله من فوق سبع سماوات.</div>
+        <div class="card-meta">
+          <span class="meta-tag">سيد الأوس</span>
+          <span class="meta-tag gold">بدري جليل</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="zayd-harithah.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">ز</div>
+        <div>
+          <div class="card-name">زيد بن حارثة</div>
+          <div class="card-kunya">أبو أسامة</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">الصحابي الوحيد المذكور باسمه في القرآن الكريم، مولى رسول الله ﷺ وحِبُّه، قائد غزوة مؤتة.</div>
+        <div class="card-meta">
+          <span class="meta-tag">مذكور في القرآن</span>
+          <span class="meta-tag gold">مولى النبي</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+    <a href="jabir.html" class="companion-card">
+      <div class="card-header">
+        <div class="card-avatar">ج</div>
+        <div>
+          <div class="card-name">جابر بن عبد الله</div>
+          <div class="card-kunya">أبو عبد الله</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-desc">المحدث الأنصاري الجليل، شهد كثيراً من الغزوات مع النبي ﷺ، وروى أحاديث كثيرة في الفقه والسيرة.</div>
+        <div class="card-meta">
+          <span class="meta-tag">محدث الأنصار</span>
+          <span class="meta-tag gold">الفقيه الرواية</span>
+        </div>
+        <div class="card-link-text">اقرأ السيرة الكاملة &laquo;</div>
+      </div>
+    </a>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-title">أصحاب رسول الله ﷺ</div>
+  <p>رضي الله عنهم أجمعين &mdash; نجوم يُهتدى بهم في الظلمات</p>
+  <p style="margin-top:8px;font-size:0.8rem;opacity:0.6">موقع تعليمي يهتم بسير الصحابة الكرام</p>
+</footer>
+
+<script>
+function filterCompanions() {
+  var query = document.getElementById('searchInput').value.trim().toLowerCase();
+  var cards = document.querySelectorAll('.companion-card');
+  cards.forEach(function(card) {
+    var text = card.textContent.toLowerCase();
+    card.style.display = text.includes(query) ? '' : 'none';
+  });
+}
+</script>
+
+</body>
+</html>

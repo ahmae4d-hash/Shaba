@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green-dark: #1a4731;
+  --green: #2d7a4f;
+  --green-light: #4caf80;
+  --gold: #c9a84c;
+  --gold-light: #e8cb7a;
+  --cream: #fdf8f0;
+  --cream-dark: #f5ede0;
+  --text-dark: #1a1a1a;
+  --text-mid: #3d3d3d;
+  --text-light: #6b6b6b;
+  --white: #ffffff;
+  --shadow: 0 4px 20px rgba(0,0,0,0.1);
+  --shadow-hover: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+html {
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cairo', 'Amiri', sans-serif;
+  background-color: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.8;
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 60%, var(--green-light) 100%);
+  color: var(--white);
+  text-align: center;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.header-inner {
+  position: relative;
+  z-index: 1;
+  padding: 40px 20px 30px;
+}
+
+.site-title {
+  font-family: 'Amiri', serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.site-subtitle {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 4px;
+}
+
+.basmala {
+  font-family: 'Amiri', serif;
+  font-size: 1.3rem;
+  color: var(--gold-light);
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+/* ===== NAVIGATION ===== */
+nav.breadcrumb {
+  background: var(--green-dark);
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+  flex-wrap: wrap;
+}
+
+nav.breadcrumb a {
+  color: var(--gold-light);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+nav.breadcrumb a:hover {
+  color: var(--white);
+}
+
+nav.breadcrumb .separator {
+  color: rgba(255,255,255,0.4);
+}
+
+/* ===== MAIN CONTAINER ===== */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+/* ===== INDEX PAGE ===== */
+.intro-box {
+  background: var(--white);
+  border-right: 5px solid var(--gold);
+  border-radius: 10px;
+  padding: 24px 28px;
+  margin-bottom: 40px;
+  box-shadow: var(--shadow);
+  font-size: 1.05rem;
+  color: var(--text-mid);
+  line-height: 2;
+}
+
+.intro-box strong {
+  color: var(--green-dark);
+}
+
+.section-title {
+  font-family: 'Amiri', serif;
+  font-size: 1.8rem;
+  color: var(--green-dark);
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-title .icon {
+  color: var(--gold);
+}
+
+.companions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.companion-card {
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  border-top: 4px solid var(--green);
+}
+
+.companion-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-top-color: var(--gold);
+}
+
+.card-header {
+  background: linear-gradient(135deg, var(--green-dark), var(--green));
+  color: var(--white);
+  padding: 20px 22px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.card-avatar {
+  width: 50px;
+  height: 50px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Amiri', serif;
+  font-size: 1.3rem;
+  color: var(--gold-light);
+  flex-shrink: 0;
+  border: 2px solid rgba(255,255,255,0.25);
+}
+
+.card-name {
+  font-family: 'Amiri', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 2px;
+}
+
+.card-kunya {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.card-body {
+  padding: 16px 22px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-desc {
+  font-size: 0.93rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+  flex: 1;
+}
+
+.card-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.meta-tag {
+  background: var(--cream-dark);
+  color: var(--green-dark);
+  font-size: 0.78rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.meta-tag.gold {
+  background: rgba(201,168,76,0.15);
+  color: #8a6a10;
+}
+
+.card-link-text {
+  color: var(--green);
+  font-size: 0.88rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+/* ===== PROFILE PAGE ===== */
+.profile-header {
+  background: linear-gradient(135deg, var(--green-dark), var(--green));
+  color: var(--white);
+  border-radius: 16px;
+  padding: 36px 40px;
+  margin-bottom: 36px;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Amiri', serif;
+  font-size: 2.2rem;
+  color: var(--gold-light);
+  border: 3px solid rgba(255,255,255,0.3);
+  flex-shrink: 0;
+}
+
+.profile-info h1 {
+  font-family: 'Amiri', serif;
+  font-size: 2rem;
+  color: var(--gold-light);
+  margin-bottom: 6px;
+}
+
+.profile-info .kunya {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 10px;
+}
+
+.profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.profile-tag {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: var(--white);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.83rem;
+}
+
+.profile-tag.gold {
+  background: rgba(201,168,76,0.3);
+  border-color: var(--gold);
+  color: var(--gold-light);
+}
+
+/* ===== QUICK INFO BOX ===== */
+.quick-info {
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 24px 28px;
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-label {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.info-value {
+  font-size: 1rem;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.info-item .info-value.green {
+  color: var(--green-dark);
+}
+
+/* ===== CONTENT SECTIONS ===== */
+.content-section {
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 28px 32px;
+  margin-bottom: 24px;
+}
+
+.content-section h2 {
+  font-family: 'Amiri', serif;
+  font-size: 1.5rem;
+  color: var(--green-dark);
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--cream-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.content-section h2 .sec-icon {
+  color: var(--gold);
+  font-size: 1.2rem;
+}
+
+.content-section p {
+  color: var(--text-mid);
+  line-height: 2;
+  margin-bottom: 14px;
+  font-size: 1rem;
+}
+
+.content-section p:last-child {
+  margin-bottom: 0;
+}
+
+.hadith-box {
+  background: var(--cream-dark);
+  border-right: 4px solid var(--gold);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 16px 0;
+  font-family: 'Amiri', serif;
+  font-size: 1.05rem;
+  color: var(--green-dark);
+  line-height: 2;
+  font-style: italic;
+}
+
+.hadith-source {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-top: 8px;
+  font-style: normal;
+  font-family: 'Cairo', sans-serif;
+}
+
+.highlight {
+  color: var(--green);
+  font-weight: 600;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--green-dark);
+  color: rgba(255,255,255,0.7);
+  text-align: center;
+  padding: 28px 20px;
+  font-size: 0.88rem;
+  margin-top: 60px;
+}
+
+footer .footer-title {
+  font-family: 'Amiri', serif;
+  font-size: 1.1rem;
+  color: var(--gold-light);
+  margin-bottom: 8px;
+}
+
+/* ===== BACK BUTTON ===== */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green);
+  color: var(--white);
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.93rem;
+  margin-bottom: 28px;
+  transition: background 0.2s;
+}
+
+.back-btn:hover {
+  background: var(--green-dark);
+}
+
+/* ===== SEARCH ===== */
+.search-bar {
+  margin-bottom: 32px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 14px 22px;
+  border: 2px solid var(--cream-dark);
+  border-radius: 10px;
+  font-family: 'Cairo', sans-serif;
+  font-size: 1rem;
+  color: var(--text-dark);
+  background: var(--white);
+  box-shadow: var(--shadow);
+  outline: none;
+  transition: border-color 0.2s;
+  direction: rtl;
+}
+
+.search-bar input:focus {
+  border-color: var(--green);
+}
+
+.search-bar input::placeholder {
+  color: var(--text-light);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .site-title { font-size: 1.8rem; }
+  .profile-header { padding: 24px 20px; }
+  .profile-info h1 { font-size: 1.5rem; }
+  .content-section { padding: 20px 18px; }
+  .companions-grid { grid-template-columns: 1fr; }
+  .quick-info { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .quick-info { grid-template-columns: 1fr; }
+  .header-inner { padding: 28px 16px 20px; }
+}
